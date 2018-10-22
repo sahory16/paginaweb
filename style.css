@@ -507,6 +507,7 @@ a:hover, a:active {
     font-size: 14px;
     line-height: 2rem;
     text-align: left;
+    color:black;
 }
 
 .single-page .blockquote-text {
