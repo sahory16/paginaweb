@@ -147,9 +147,23 @@
                     <div class="entry-content">
                         <h3>JavaScript</h3>
                         <p> Es un lenguaje de programación que te permite crear contenido nuevo y dinámico, controlar archivos de multimedia, crear imágenes animadas y muchas otras cosas más.</p><br><br>
+
+                        <p>JavaScript puede cambiar contenido HTML </p>
                         <h3><p id="demo">Primer ejercicio en JavaScript.</p></h3>
 
                         <button type="button" onclick='document.getElementById("demo").innerHTML = "Hola Sahory, estas usando JavaScript!"'>Dale Click !</button>
+
+                        <br><br>
+
+                        <p>Cambiar atributos HTML  <br>
+
+                        En este caso, JavaScript cambia el valor del atributo src (fuente) de una imagen.</p>
+
+                        <button onclick="document.getElementById('imagen').src='pic_bulbon.gif'">Encender la laz</button>
+
+                        <img id="imagen" src="pic_bulboff.gif" style="width:100px">
+
+                        <button onclick="document.getElementById('imagen').src='pic_bulboff.gif'">Apagar la luz</button>
                         
                     </div><!-- .entry-content -->
 
