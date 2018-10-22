@@ -146,15 +146,13 @@
 
                     <div class="entry-content">
                         <h3>JavaScript</h3>
-                        <p> Es un lenguaje de programación que te permite crear contenido nuevo y dinámico, controlar archivos de multimedia, crear imágenes animadas y muchas otras cosas más.</p><br><br>
+                        <p> Es un lenguaje de programación que te permite crear contenido nuevo y dinámico, controlar archivos de multimedia, crear imágenes animadas y muchas otras cosas más.</p>
 
                         <p>JavaScript puede cambiar contenido HTML </p>
                         <h3><p id="demo">Primer ejercicio en JavaScript.</p></h3>
 
                         <button type="button" onclick='document.getElementById("demo").innerHTML = "Hola Sahory, estas usando JavaScript!"'>Dale Click !</button>
-                        <button type="button" onclick='document.getElementById("demo").innerHTML = "Primer ejercicio en JavaScript"'>Dale Click !</button>
-
-                        <br><br>
+                        <button type="button" onclick='document.getElementById("demo").innerHTML = "Primer ejercicio en JavaScript"'>Mensaje anterior !</button>
 
                         <p>Cambiar atributos HTML  <br>
 
@@ -165,6 +163,15 @@
                         <img id="imagen" src="images/pic_bulboff.gif" style="width:100px">
 
                         <button onclick="document.getElementById('imagen').src='images/pic_bulboff.gif'">Turn off the light</button>
+
+                        <h3>FIGURA</h3>
+
+                        <p >Ingresa un numero:</p>
+                        <input type="number" id="num" onchange="figura()"/>
+                        <br>
+                        <div id="mostrar_fig"></div>
+
+
 
                     </div><!-- .entry-content -->
 
@@ -491,6 +498,7 @@
 <script type='text/javascript' src='js/jquery.js'></script>
 <script type='text/javascript' src='js/swiper.min.js'></script>
 <script type='text/javascript' src='js/custom.js'></script>
+<script type='text/javascript' src='js/funcion-figura.js'></script>
 
 </body>
 </html>
