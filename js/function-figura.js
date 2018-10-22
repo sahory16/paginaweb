@@ -6,7 +6,7 @@ function figura()
 						       var n=(numero/2);
 						                if (numero%2==0){						                 
 						               		 document.write("Ingrese un numero impar!");
-						               		 document.write('<a href="http://142.93.241.76/blog.html">REGRESAR</a>');
+
 						                }
 							else{
 							     for (var i=0;i<n;i++)
@@ -34,6 +34,6 @@ function figura()
 							}
 							document.write("<br>");
 							document.write("<br>");
-							document.write('<a href="http://142.93.241.76/blog.html">REGRESAR</a>');
+							document.write('<a href="http://142.93.241.76:81/blog.html">REGRESAR</a>');
 							
 						}	
