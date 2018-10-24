@@ -28,25 +28,29 @@
                                    
                                var n=(numero/2);
                                         if (numero%2==0){                                        
-                                             document.write("Ingrese un numero impar!");
-                                             
+                                     //       document.write("Ingrese un numero impar!");
+                                             document.getElementById("mostrar_fig").innerHTML="Ingrese un numero impar!";
                                         }
                             else{
                                  for (var i=0;i<n;i++)
                                  { 
                                   for(var j=1;j<=i+1;j++)
                                   { 
-                                            document.write("*");
+                                            //document.write("*");
+                                            document.getElementById("mostrar_fig").innerHTML="*";
                                   }
-                                            document.write("<br>");
+                                            //document.write("<br>");
+                                            document.getElementById("mostrar_fig").innerHTML="<br>";
+
                                  }
                                 
                                 for (var i=1;i<=n;i++)
                                 { 
                                   for(var j=0;j<=n;j++)
                                   { 
-                                    if(j<i) {                          
-                                            document.write("&nbsp&nbsp");
+                                    if(j<i) { 
+                                            document.getElementById("mostrar_fig").innerHTML="&nbsp&nbsp";                         
+                                            //document.write("&nbsp&nbsp");
                                             }
                                     else {
                                             document.write("*");
@@ -55,9 +59,11 @@
                                     document.write("<br>");
                                 }
                             }
-                            document.write("<br>");
+                            /*document.write("<br>");
                             document.write("<br>");
                             document.write('<a href="http://142.93.241.76:81/blog.html">REGRESAR</a>');
+                            */
+                            
                             
                         }   
                         </script> 
@@ -211,7 +217,7 @@
                         <h3><p>FIGURA</p></h3>
 
                         <p >Ingresa un numero:</p>
-                        <input type="number" id="num" onkeydown="figura()" align="right"/>
+                        <input type="number" id="num" onkeyup="figura()" align="right"/>
                         <br>
                         <div id="mostrar_fig"></div>
 
