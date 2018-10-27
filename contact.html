@@ -168,6 +168,10 @@
                         Sigueme en todas mis redes sociales que estan a continuación</p>
                     </div><!-- .entry-content -->
 
+                    <div>
+                        <a href="http://142.93.241.76:81/correo_ajax.html">Otro forulario con ajax</a>
+                    </div>
+
                     <div class="contact-page-social">
                         <ul class="flex align-items-center">
                             
@@ -204,22 +208,22 @@
                         </div>
                     </div>
 
-                    <form action="" class="form_contact">
+                    <form action="enviar.php" method="post" class="form_contact">
                         <h2>Envia un mensaje</h2>
                         <div class="user_info">
                             <label for="names">Nombres *</label>
-                            <input type="text" id="names">
+                            <input type="text" id="names" name="nombre" required>
 
                             <label for="phone">Telefono / Celular</label>
-                            <input type="text" id="phone">
+                            <input type="text" id="phone" name="telefono">
 
                             <label for="email">Correo electronico *</label>
-                            <input type="text" id="email">
+                            <input type="text" id="email" name="correo" required>
 
                             <label for="mensaje">Mensaje *</label>
-                            <textarea id="mensaje"></textarea>
+                            <textarea id="mensaje" name="mensaje" required></textarea>
 
-                            <input type="button" value="Enviar Mensaje" id="btnSend">
+                            <input type="submit" value="Enviar Mensaje" id="btnSend">
                         </div>
                     </form>
                 </div> <!-- fin formulario propio -->

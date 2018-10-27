@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="html, form, jquery, ajax, recargar" />
+<meta name="description" content="Demo para enviar formulario con ajax sin recargar" />
+<title>Enviar formulario sin recargar</title>
+<script language="javascript" src="jquery-1.3.min.js"></script>
+<script language="javascript">
+$(document).ready(function() {
+    $().ajaxStart(function() {
+        $('#loading').show();
+        $('#result').hide();
+    }).ajaxStop(function() {
+        $('#loading').hide();
+        $('#result').fadeIn('slow');
+    });
+    $('#myform').submit(function() {
+        $.ajax({
+            type: 'POST',
+            url: $(this).attr('action'),
+            data: $(this).serialize(),
+            success: function(data) {
+                $('#result').html(data);
+
+            }
+        })
+        
+        return false;
+    }); 
+})  
+</script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<body>
+<form method="post" action="enviocorreo_ajax.php" id="myform" name="myform" >
+      <fieldset id="form">
+      	<legend>Send Email</legend>
+        <ol>
+        	<li><label>Name:</label><input type="text" size="30" name="fname" /></li>
+            <li><label>E-mail:</label><input type="text" size="30" name="femail" /></li>
+            <li><label>Phone:</label><input type="text" size="30" name="fphone" /></li>
+            <li><label>Comments:</label><textarea name="fcomment" rows="5" cols="25"></textarea></li>
+        </ol>
+        <p align="center">
+        <input type="submit"   name="mysubmit" value="Enviar" />
+        </p>
+      </fieldset>
+</div>
+</form>
+<div id="loading"></div>
+<div id="result"></div>
+<p align="center"><a href="http://142.93.241.76:81/contacto">Regresar al blog</a></p>
+</body>
+</html>

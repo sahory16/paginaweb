@@ -1,0 +1,35 @@
+body,td,th {
+	color: #333333;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+fieldset {
+	width:380px;
+	margin:auto;
+}
+#form ol{
+	list-style:none;
+}
+#form ol li{
+	padding-bottom:10px;
+}
+#form ol li label{
+	float:left;
+	width:90px;
+}
+#result {
+	width:280px;
+	padding:10px;
+	border:1px solid #bfcddb;
+	margin:auto;
+	margin-top:10px;
+	text-align:center;
+	display:none;
+}
+#loading {
+	background-image:url(ajax-loader.gif);
+	width:31px;
+	height:31px;
+	margin:auto;
+	display:none;
+}
