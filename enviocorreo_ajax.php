@@ -9,9 +9,10 @@ $mensaje.="Comments: ".$_POST['fcomment']."\n";
 $email_destiny="saho.1606@gmail.com";
 $subject="Message from us";
 
-if (mail($email_destiny,$subject,$mensaje,"From: Contact<".$_POST['femail'].">")) {
-	echo '<p align="center"><b>Thanks for your comments</b></p>';
+if (mail($email_destiny,$subject,$mensaje,'From: Contact<'.$_POST['femail'].'>')) 
+	{
+	echo "'<p align="center"><b>Thanks for your comments</b></p>'";
 } else {
-	echo '<p align="center">Error '.$_POST['fname'].'</p>';
+	echo "'<p align="center">Error '.$_POST['fname'].'</p>'";
 }
 ?>
