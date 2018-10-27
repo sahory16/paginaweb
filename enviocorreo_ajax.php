@@ -6,7 +6,7 @@ $mensaje.="E-mail: ".$_POST['femail']."\n";
 $mensaje.="Phone: ".$_POST['fphone']."\n";
 $mensaje.="Comments: ".$_POST['fcomment']."\n";
 
-$email_destiny="mio@mail.com";
+$email_destiny="saho.1606@gmail.com";
 $subject="Message from us";
 
 if (mail($email_destiny,$subject,$mensaje,"From: Contact<".$_POST['femail'].">")) {
