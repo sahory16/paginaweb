@@ -17,6 +17,6 @@ $carta .= "Mensaje: $mensaje";
 
 // Enviando Mensaje
 mail($destinatario, $asunto, $carta);
-header('Location:mensaje-de-envio.html');
+header('Location:http://142.93.241.76:81/mensaje-de-envio.html');
 
 ?>
