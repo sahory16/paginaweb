@@ -1,0 +1,122 @@
+a{
+  color: black;
+}
+
+a:hover{
+  color: black;
+}
+
+h1, input::-webkit-input-placeholder, button {
+  font-family: 'roboto', sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+h1 {
+  height: 100px;
+  width: 100%;
+  font-size: 18px;
+  background: cadetblue;
+  color: white;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+  font-family: 'roboto', sans-serif;
+  text-align: center;
+  line-height: 70px;
+}
+
+form {
+  box-sizing: border-box;
+  width: 360px;
+  margin: 105px auto 0;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 40px;
+  border-radius: 3px;
+}
+form h1 {
+  box-sizing: border-box;
+  padding: 25px;
+}
+textarea {
+  margin: 40px 25px;
+  width: 300px;
+  display: block;
+  border: none;
+  padding: 5px 0;
+  border-bottom: solid 1px cadetblue;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, cadetblue 4%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, cadetblue 4%);
+  background-position: -300px 0;
+  background-size: 300px 100%;
+  background-repeat: no-repeat;
+  color: cadetblue;
+  resize: none;
+}
+h2 {text-align: center;}
+#contactform {
+  margin: 50px auto !important;
+}
+.enviado, .error {padding: 30px}
+input {
+  margin: 40px 25px;
+  width: 300px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px cadetblue;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, cadetblue 4%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, cadetblue 4%);
+  background-position: -300px 0;
+  background-size: 300px 100%;
+  background-repeat: no-repeat;
+  color: cadetblue;
+}
+input:focus, input:valid, textarea:focus, input:valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder, textarea:focus {
+  color: black;
+  font-size: 11px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  visibility: visible !important;
+}
+
+button {
+  border: none;
+  background: cadetblue;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 10px;
+  width: 300px;
+  color: white;
+  margin-left: 25px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 500ms
+}
+button:hover {
+  background-color: transparent;
+  border: 1px solid cadetblue;
+  color: cadetblue;
+}
+footer {margin-top: 25px; margin-bottom: 20px;}
+
+.fa-check{
+  color: #4dad4d;
+}
+.fa-ban{
+  color: red;
+}
+
+.enviando, .enviado, .error, .otroCorreo{
+	display: none;
+}
+.copyright{
+  text-align: center;
+}
