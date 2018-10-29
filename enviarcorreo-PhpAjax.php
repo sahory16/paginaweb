@@ -1,7 +1,7 @@
 <?php
 
   if($_POST==null){
-    header("Location: http://142.93.241.76:81/contact.html");
+    header("Location: http://142.93.241.76:81/index2.html");
     exit(); // Evitamos el acceso directo a esta url
   }
 
