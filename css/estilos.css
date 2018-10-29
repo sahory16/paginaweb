@@ -118,7 +118,7 @@ form.form_contact{
 
 form.form_contact h2{
 	font-size: 25px;
-	font-weight: 600;
+	font-weight: 300;
 	color: #303030;
 	margin-bottom: 30px;
 }
@@ -129,7 +129,7 @@ form.form_contact .user_info{
 }
 
 form.form_contact label{
-    font-weight: 600;
+    font-weight: 300;
 }
 
 form.form_contact input,
@@ -154,7 +154,7 @@ form.form_contact textarea{
 }
 
 form.form_contact input[type="submit"]{
-    width: 180px;
+    width: 100px;
 	background: #4091EC;
 	padding: 10px;
 	border: none;
