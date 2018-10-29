@@ -221,6 +221,12 @@
                             <input type="text" id="email" name="correo" required>
 
                             <label for="phone">Provincia *</label>
+                            <select id="contact-provincia_id" class="form-control" name="Contact[provincia_id]" onchange="
+                                //jsShowWindowLoad(&quot;Seleccionando....&lt;br&gt;&quot;);
+                                $.post( &quot;/site/provincias?id=&quot;+$(this).val(), function( data ) {
+                                  $( &quot;select#contact-canton_id&quot; ).html( data );
+                                  //jsRemoveWindowLoad();
+                                });">
                             <option value="">Seleccione provincia</option>
                             <option value="1">Azuay</option>
                             <option value="2">Bolivar</option>
@@ -292,7 +298,7 @@
                             <input type="submit" value="Enviar Mensaje" id="btnSend">
                         </div>
                     </form>
-                </section>> <!-- fin formulario propio -->
+                </section> <!-- fin formulario propio -->
 
 
 
