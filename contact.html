@@ -256,35 +256,46 @@
 
 
                             <label for="phone">Canton *</label>
-                            <select multiple name="canton" value="Seleccione.." required>
+                            <select id="contact-canton_id" class="form-control" name="Contact[canton_id]" onchange="
+                                //jsShowWindowLoad(&quot;Seleccionando....&lt;br&gt;&quot;);
+                                $.post( &quot;/site/canton?id=&quot;+$(this).val(), function( data ) {
+                                  $( &quot;select#contact-canton_id&quot; ).html( data );
+                                  //jsRemoveWindowLoad();
+                                });">
                               <option value="">Seleccione canton</option>
-                              <option value="atacames">Atacames</option>
-                              <option value="muisne">Muisne</option>
-                              <option value="esmeraldas">Esmeraldas</option>
-                              <option value="quininde">Quininde</option>
-                              <option value="concordia">La concordia</option>
-                              <option value="rio">Río Verde</option>
-                              <option value="alfaro">Eloy Alfaro</option>
-                              <option value="lorenzo">San Lorenzo</option>
+                              <option value="1">Atacames</option>
+                              <option value="2">Muisne</option>
+                              <option value="3">Esmeraldas</option>
+                              <option value="4">Quininde</option>
+                              <option value="5">La concordia</option>
+                              <option value="6">Río Verde</option>
+                              <option value="7">Eloy Alfaro</option>
+                              <option value="8">San Lorenzo</option>
                               
                             </select>
                            
 
                             <label for="phone">Parroquia *</label>
-                            <select multiple name="Parroquia" value="Seleccione.." required>
-                              <option value="agosto">5 de Agosto</option>
-                              <option value="ruiz">Bartolome Ruis</option>
-                              <option value="esmeraldas">Esmeraldas</option>
-                              <option value="luis">Luis Tello</option>
-                              <option value="simon">Simon Plata</option>
-                              <option value="tabiazo">Tabiazo</option>
-                              <option value="tachina">Tachina</option>
-                              <option value="vuelta">Vuelta Larga</option>
-                              <option value="camarones">Camarones</option>
-                              <option value="chinca">Chinca</option>
-                              <option value="carlos">Carlos Concha</option>
-                              <option value="majua">Majua</option>
-                              <option value="mateo">San Mateo</option>
+                            <select id="contact-parroquia_id" class="form-control" name="Contact[parroquia_id]" onchange="
+                                //jsShowWindowLoad(&quot;Seleccionando....&lt;br&gt;&quot;);
+                                $.post( &quot;/site/parroquia?id=&quot;+$(this).val(), function( data ) {
+                                  $( &quot;select#contact-canton_id&quot; ).html( data );
+                                  //jsRemoveWindowLoad();
+                                });">
+                              <option value="">Seleccione una parroquia</option>
+                              <option value="1">5 de Agosto</option>
+                              <option value="2">Bartolome Ruis</option>
+                              <option value="3">Esmeraldas</option>
+                              <option value="4">Luis Tello</option>
+                              <option value="5">Simon Plata</option>
+                              <option value="6">Tabiazo</option>
+                              <option value="7">Tachina</option>
+                              <option value="8">Vuelta Larga</option>
+                              <option value="9">Camarones</option>
+                              <option value="10">Chinca</option>
+                              <option value="11">Carlos Concha</option>
+                              <option value="12">Majua</option>
+                              <option value="13">San Mateo</option>
                               
                             </select>
 
