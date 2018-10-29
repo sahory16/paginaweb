@@ -25,8 +25,8 @@ body{
 /* FORMULARIO =================================== */
 
 .form_wrap{
-    width: 1050px;
-    height: 530px;
+    width: 2050px;
+    height: 1530px;
     margin: 50px auto;
     display: flex;
 
