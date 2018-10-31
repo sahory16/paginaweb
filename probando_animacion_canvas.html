@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var specificPropertyParameters = anime({
+  targets: '#specificPropertyParameters .el',
+  translateX: {
+    value: 250,
+    duration: 800
+  },
+  rotate: {
+    value: 360,
+    duration: 1800,
+    easing: 'easeInOutSine'
+  },
+  scale: {
+    value: 2,
+    duration: 1600,
+    delay: 800,
+    easing: 'easeInOutQuart'
+  },
+  delay: 250 // All properties except 'scale' inherit 250ms delay
+});
+</script>
+<body>
+
+<div  id = "specificPropertyParameters" > 
+  <div class="square el"></div>
+</div>
+
+<script src="js/anime.min.js"></script>
+</body>
+</html>
