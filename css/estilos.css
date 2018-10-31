@@ -112,13 +112,13 @@ body{
 
 /* Formulario de contacto*/
 form.form_contact{
-    width: 62%;
+    width: 52%;
     padding: 30px 40px;
 }
 
 form.form_contact h2{
-	font-size: 25px;
-	font-weight: 300;
+	font-size: 18px;
+	font-weight: 280;
 	color: #303030;
 	margin-bottom: 30px;
 }
@@ -129,7 +129,7 @@ form.form_contact .user_info{
 }
 
 form.form_contact label{
-    font-weight: 300;
+    font-weight: 280;
 }
 
 form.form_contact input,
