@@ -15,19 +15,18 @@
 :focus{
     outline: none;
 }
-/*
+
 body{
     background: #DBDBDB;
     font-family: 'Open sans';
 }
-*/
 
 /* FORMULARIO =================================== */
 
 .form_wrap{
-    width: 500px;
-    height: 500px;
-    margin: 100px auto;
+    width: 1050px;
+    height: 530px;
+    margin: 50px auto;
     display: flex;
 
     background: #fff;
@@ -112,15 +111,15 @@ body{
 
 /* Formulario de contacto*/
 form.form_contact{
-    width: 52%;
+    width: 62%;
     padding: 30px 40px;
 }
 
 form.form_contact h2{
-	font-size: 18px;
-	font-weight: 280;
-	color: #303030;
-	margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 30px;
 }
 
 form.form_contact .user_info{
@@ -129,7 +128,7 @@ form.form_contact .user_info{
 }
 
 form.form_contact label{
-    font-weight: 280;
+    font-weight: 600;
 }
 
 form.form_contact input,
@@ -142,9 +141,9 @@ form.form_contact textarea{
     border-bottom: 2px solid #D1D1D1;
 
     font-family: 'Open sans';
-	color: #5A5A5A;
-	font-size: 14px;
-	font-weight: 400;
+    color: #5A5A5A;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 form.form_contact textarea{
@@ -154,19 +153,19 @@ form.form_contact textarea{
 }
 
 form.form_contact input[type="submit"]{
-    width: 100px;
-	background: #4091EC;
-	padding: 10px;
-	border: none;
-	border-radius: 25px;
+    width: 180px;
+    background: #4091EC;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
 
     align-self: flex-end;
 
     color: #fff;
-	font-family: 'Open sans';
-	font-size: 16px;
-	font-weight: 600;
-	cursor: pointer;
+    font-family: 'Open sans';
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 form.form_contact input[type="submit"]:hover{
@@ -199,17 +198,17 @@ form.form_contact input[type="submit"]:hover{
 .mensaje_modal h3{
     text-align: center;
     font-family: 'Ubuntu';
-	font-size: 20px;
-	font-weight: 400;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .mensaje_modal h3:after{
     content: '';
-	display: block;
-	width: 100%;
-	height: 1px;
-	background: #C5C5C5;
-	margin: 10px 0px 15px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #C5C5C5;
+    margin: 10px 0px 15px;
 }
 
 .mensaje_modal p{
@@ -227,13 +226,42 @@ form.form_contact input[type="submit"]:hover{
 
 #btnClose{
     display: inline-block;
-	padding: 3px 10px;
-	margin-top: 10px;
+    padding: 3px 10px;
+    margin-top: 10px;
 
-	background: #E25151;
-	color: #fff;
-	border: 2px solid #B14141;
-	cursor: pointer;
+    background: #E25151;
+    color: #fff;
+    border: 2px solid #B14141;
+    cursor: pointer;
 
-	float: right;
+    float: right;
+}
+
+/* MENSAJE EXITOSO*/
+
+.mensaje-exito{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje-exito h1{
+    font-size: 35px;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mensaje-exito a{
+    display: block;
+    padding: 10px 30px;
+    background: #4091EC;
+    text-decoration: none;
+    color: #fff;
+}
+
+.mensaje-exito a:hover{
+    background: #3371B6;
 }
