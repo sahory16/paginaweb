@@ -226,33 +226,33 @@
                             <input type="text" id="email" name="correo" required>
 
                             
-                            <label for="phone">Provincia *</label>
-                            <select name=provincia onchange="canton()" required>
+                            <label for="provincia">Provincia *</label>
+                            <select name=provincia onchange="cambiar()" required>
                             <option value="-">Seleccione provincia</option>
-                            <option value="1">Azuay
-                            <option value="2">Bolivar
-                            <option value="3">Cañar
-                            <option value="4">Carchi
-                            <option value="5">Chimborazo
-                            <option value="6">Cotopaxi
-                            <option value="7">El Oro
-                            <option value="8">Esmeraldas
-                            <option value="9">Galapagos
-                            <option value="10">Guayas
-                            <option value="11">Imbabura
-                            <option value="12">Loja
-                            <option value="13">Los Rios
-                            <option value="14">Manabi
-                            <option value="15">Morona Santiago
-                            <option value="16">Napo
-                            <option value="17">Orellana
-                            <option value="18">Pastaza
-                            <option value="19">Pichincha
-                            <option value="20">Santa Elena
-                            <option value="21">Santo Domingo de los Tsáchilas
-                            <option value="22">Sucumbios
-                            <option value="23">Tungurahua
-                            <option value="24">Zamora Chinchipe
+                            <option value="1">Azuay</option>
+                            <option value="2">Bolivar</option>
+                            <option value="3">Cañar</option>
+                            <option value="4">Carchi</option>
+                            <option value="5">Chimborazo</option>
+                            <option value="6">Cotopaxi</option>
+                            <option value="7">El Oro</option>
+                            <option value="8">Esmeraldas</option>
+                            <option value="9">Galapagos</option>
+                            <option value="10">Guayas</option>
+                            <option value="11">Imbabura</option>
+                            <option value="12">Loja</option>
+                            <option value="13">Los Rios</option>
+                            <option value="14">Manabi</option>
+                            <option value="15">Morona Santiago</option>
+                            <option value="16">Napo</option>
+                            <option value="17">Orellana</option>
+                            <option value="18">Pastaza</option>
+                            <option value="19">Pichincha</option>
+                            <option value="20">Santa Elena</option>
+                            <option value="21">Santo Domingo de los Tsáchilas</option>
+                            <option value="22">Sucumbios</option>
+                            <option value="23">Tungurahua</option>
+                            <option value="24">Zamora Chinchipe</option>
 
                             </select> 
 
@@ -621,7 +621,7 @@ var canton_22=new Array("Lago Agrio","Cascales","Cuyabeno","Gonzalo Pizarro","Pu
 var canton_23=new Array("Ambato","Baños","Cevallos","Mocha","Patate","Quero","San Pedro de Pelileo","Santiago de Píllaro","Tisaleo");
 var canton_24=new Array("Zamora","Centinela de Cóndor","Chinchipe","El Pangui","Nangaritza","Palanda","Paquicha","Yacuambi","Yantzaza");
 
-    function canton(){
+    function cambiar(){
 var provincia;
     provincia = document.contacto-formulario.provincia[document.contacto-formulario.provincia.selectedIndex].value;    
     if (provincia != 0) { 
