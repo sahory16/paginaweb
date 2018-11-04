@@ -25,11 +25,11 @@
 
 .form_wrap{
     width: 1050px;
-    height: 930px;
+    height: 1080px;
     margin: 50px auto;
     display: flex;
 
-    background: #fff;
+    /*background: #fff;*/
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
