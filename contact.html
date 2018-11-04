@@ -227,7 +227,7 @@
 
                             
                             <label for="prov">Provincia *</label>
-                            <select name=provincia onchange="cambia_canton()" required>
+                            <select name=provincia onchange="cambia()" required>
                        <!--     <option value="-">Seleccione provincia</option>-->
                             <option value="1">Azuay
                             <option value="2">Bolivar
@@ -621,7 +621,7 @@ var canton_22=new Array("Lago Agrio","Cascales","Cuyabeno","Gonzalo Pizarro","Pu
 var canton_23=new Array("Ambato","Baños","Cevallos","Mocha","Patate","Quero","San Pedro de Pelileo","Santiago de Píllaro","Tisaleo");
 var canton_24=new Array("Zamora","Centinela de Cóndor","Chinchipe","El Pangui","Nangaritza","Palanda","Paquicha","Yacuambi","Yantzaza");
 
-    function cambia_canton(){
+    function cambia(){
 var provincia;
     provincia = document.formC.provincia[document.formC.provincia.selectedIndex].value;    
     if (provincia != 0) { 
