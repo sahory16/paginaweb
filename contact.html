@@ -213,7 +213,7 @@
                         </div>
                     </div>
 
-                    <form name="formC" action="enviar.php" method="post" class="form_contact">
+                    <form name="formuContacto" action="enviar.php" method="post" class="form_contact">
                         <h2>Envia un mensaje</h2>
                         <div class="user_info">
                             <label for="names">Nombre y Apellido *</label>
@@ -623,17 +623,17 @@ var canton_24=new Array("Zamora","Centinela de Cóndor","Chinchipe","El Pangui",
 
     function cambia(){
 var provincia;
-    provincia = document.formC.provincia[document.formC.provincia.selectedIndex].value;    
+    provincia = document.formuContacto.provincia[document.formuContacto.provincia.selectedIndex].value;    
     if (provincia != 0) { 
         mis_cantones=eval("canton_" + provincia);
         num_cantones = mis_cantones.length;
-        document.formC.canton.length = num_cantones;
+        document.formuContacto.canton.length = num_cantones;
         for(i=0;i<num_cantones;i++){ 
-            document.formC.canton.options[i].value=mis_cantones[i];
-            document.formC.canton.options[i].text=mis_cantones[i];
+            document.formuContacto.canton.options[i].value=mis_cantones[i];
+            document.formuContacto.canton.options[i].text=mis_cantones[i];
         }
     }
-        document.formC.canton.options[0].selected = true;
+        document.formuContacto.canton.options[0].selected = true;
     
     }
 </script>
