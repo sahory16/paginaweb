@@ -213,7 +213,7 @@
                         </div>
                     </div>
 
-                    <form action="enviar.php" method="post" class="form_contact">
+                    <form name="contacto-formulario" action="enviar.php" method="post" class="form_contact">
                         <h2>Envia un mensaje</h2>
                         <div class="user_info">
                             <label for="names">Nombre y Apellido *</label>
@@ -227,42 +227,43 @@
 
                             
                             <label for="phone">Provincia *</label>
-                            <select id="contact-provincia_id" class="form-control" name="Contact[provincia_id]" onchange="
-                                //jsShowWindowLoad(&quot;Seleccionando....&lt;br&gt;&quot;);
-                                $.post( &quot;/site/provincias?id=&quot;+$(this).val(), function( data ) {
-                                  $( &quot;select#contact-canton_id&quot; ).html( data );
-                                  //jsRemoveWindowLoad();
-                                });" required>
-                            <option value="">Seleccione provincia</option>
-                            <option value="1">Azuay</option>
-                            <option value="2">Bolivar</option>
-                            <option value="3">Cañar</option>
-                            <option value="4">Carchi</option>
-                            <option value="5">Cotopaxi</option>
-                            <option value="6">Chimborazo</option>
-                            <option value="7">El Oro</option>
-                            <option value="8">Esmeraldas</option>
-                            <option value="9">Guayas</option>
-                            <option value="10">Imbabura</option>
-                            <option value="11">Loja</option>
-                            <option value="12">Los Rios</option>
-                            <option value="13">Manabi</option>
-                            <option value="14">Morona Santiago</option>
-                            <option value="15">Napo</option>
-                            <option value="16">Pastaza</option>
-                            <option value="17">Pichincha</option>
-                            <option value="18">Tungurahua</option>
-                            <option value="19">Zamora Chinchipe</option>
-                            <option value="20">Galapagos</option>
-                            <option value="21">Sucumbios</option>
-                            <option value="22">Orellana</option>
-                            <option value="23">Santo Domingo</option>
-                            <option value="24">Santa Elena</option>
+                            <select name=provincia onchange="canton()" required>
+                            <option value="-">Seleccione provincia</option>
+                            <option value="1">Azuay
+                            <option value="2">Bolivar
+                            <option value="3">Cañar
+                            <option value="4">Carchi
+                            <option value="5">Chimborazo
+                            <option value="6">Cotopaxi
+                            <option value="7">El Oro
+                            <option value="8">Esmeraldas
+                            <option value="9">Galapagos
+                            <option value="10">Guayas
+                            <option value="11">Imbabura
+                            <option value="12">Loja
+                            <option value="13">Los Rios
+                            <option value="14">Manabi
+                            <option value="15">Morona Santiago
+                            <option value="16">Napo
+                            <option value="17">Orellana
+                            <option value="18">Pastaza
+                            <option value="19">Pichincha
+                            <option value="20">Santa Elena
+                            <option value="21">Santo Domingo de los Tsáchilas
+                            <option value="22">Sucumbios
+                            <option value="23">Tungurahua
+                            <option value="24">Zamora Chinchipe
+
                             </select> 
 
 <br>
-
                             <label for="phone">Canton *</label>
+                            <select name=canton required>
+                                <option value="-">-
+                                    </select>
+
+
+               <!--             <label for="phone">Canton *</label>
                             <select id="contact-canton_id" class="form-control" name="Contact[canton_id]" onchange="
                                 //jsShowWindowLoad(&quot;Seleccionando....&lt;br&gt;&quot;);
                                 $.post( &quot;/site/canton?id=&quot;+$(this).val(), function( data ) {
@@ -305,7 +306,7 @@
                               <option value="12">Majua</option>
                               <option value="13">San Mateo</option>
                               
-                            </select>
+                            </select> -->
 <br>
                             <label for="phone">Asunto *</label>
                             <input type="text" id="asuntoMen" name="asunto" required>
@@ -620,19 +621,19 @@ var canton_22=new Array("Lago Agrio","Cascales","Cuyabeno","Gonzalo Pizarro","Pu
 var canton_23=new Array("Ambato","Baños","Cevallos","Mocha","Patate","Quero","San Pedro de Pelileo","Santiago de Píllaro","Tisaleo");
 var canton_24=new Array("Zamora","Centinela de Cóndor","Chinchipe","El Pangui","Nangaritza","Palanda","Paquicha","Yacuambi","Yantzaza");
 
-    function cambia_canton(){
+    function canton(){
 var provincia;
-    provincia = document.formC.provincia[document.formC.provincia.selectedIndex].value;    
+    provincia = document.contacto-formulario.provincia[document.contacto-formulario.provincia.selectedIndex].value;    
     if (provincia != 0) { 
         mis_cantones=eval("canton_" + provincia);
         num_cantones = mis_cantones.length;
-        document.formC.canton.length = num_cantones;
+        document.contacto-formulario.canton.length = num_cantones;
         for(i=0;i<num_cantones;i++){ 
-            document.formC.canton.options[i].value=mis_cantones[i];
-            document.formC.canton.options[i].text=mis_cantones[i];
+            document.contacto-formulario.canton.options[i].value=mis_cantones[i];
+            document.contacto-formulario.canton.options[i].text=mis_cantones[i];
         }
     }
-        document.formC.canton.options[0].selected = true;
+        document.contacto-formulario.canton.options[0].selected = true;
     
     }
 </script>
