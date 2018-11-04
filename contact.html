@@ -232,7 +232,7 @@
                                 $.post( &quot;/site/provincias?id=&quot;+$(this).val(), function( data ) {
                                   $( &quot;select#contact-canton_id&quot; ).html( data );
                                   //jsRemoveWindowLoad();
-                                });">
+                                });" required>
                             <option value="">Seleccione provincia</option>
                             <option value="1">Azuay</option>
                             <option value="2">Bolivar</option>
@@ -260,6 +260,7 @@
                             <option value="24">Santa Elena</option>
                             </select> 
 
+<br>
 
                             <label for="phone">Canton *</label>
                             <select id="contact-canton_id" class="form-control" name="Contact[canton_id]" onchange="
@@ -267,7 +268,7 @@
                                 $.post( &quot;/site/canton?id=&quot;+$(this).val(), function( data ) {
                                   $( &quot;select#contact-canton_id&quot; ).html( data );
                                   //jsRemoveWindowLoad();
-                                });">
+                                });" required>
                               <option value="">Seleccione canton</option>
                               <option value="1">Atacames</option>
                               <option value="2">Muisne</option>
@@ -280,6 +281,7 @@
                               
                             </select>
                            
+<br>
 
                             <label for="phone">Parroquia *</label>
                             <select id="contact-parroquia_id" class="form-control" name="Contact[parroquia_id]" onchange="
@@ -287,7 +289,7 @@
                                 $.post( &quot;/site/parroquia?id=&quot;+$(this).val(), function( data ) {
                                   $( &quot;select#contact-canton_id&quot; ).html( data );
                                   //jsRemoveWindowLoad();
-                                });">
+                                });" required>
                               <option value="">Seleccione una parroquia</option>
                               <option value="1">5 de Agosto</option>
                               <option value="2">Bartolome Ruis</option>
@@ -304,7 +306,7 @@
                               <option value="13">San Mateo</option>
                               
                             </select>
-
+<br>
                             <label for="phone">Asunto *</label>
                             <input type="text" id="asuntoMen" name="asunto" required>
 
