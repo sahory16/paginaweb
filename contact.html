@@ -213,7 +213,7 @@
                         </div>
                     </div>
 
-                    <form name="contacto-formulario" action="enviar.php" method="post" class="form_contact">
+                    <form name="formC" action="enviar.php" method="post" class="form_contact">
                         <h2>Envia un mensaje</h2>
                         <div class="user_info">
                             <label for="names">Nombre y Apellido *</label>
@@ -227,7 +227,7 @@
 
                             
                             <label for="prov">Provincia *</label>
-                            <select name=provincia onchange="cambiar()" required>
+                            <select name=provincia onchange="cambia_canton()" required>
                        <!--     <option value="-">Seleccione provincia</option>-->
                             <option value="1">Azuay
                             <option value="2">Bolivar
@@ -621,22 +621,23 @@ var canton_22=new Array("Lago Agrio","Cascales","Cuyabeno","Gonzalo Pizarro","Pu
 var canton_23=new Array("Ambato","Baños","Cevallos","Mocha","Patate","Quero","San Pedro de Pelileo","Santiago de Píllaro","Tisaleo");
 var canton_24=new Array("Zamora","Centinela de Cóndor","Chinchipe","El Pangui","Nangaritza","Palanda","Paquicha","Yacuambi","Yantzaza");
 
-    function cambiar(){
+    function cambia_canton(){
 var provincia;
-    provincia = document.contacto-formulario.provincia[document.contacto-formulario.provincia.selectedIndex].value;    
+    provincia = document.formC.provincia[document.formC.provincia.selectedIndex].value;    
     if (provincia != 0) { 
         mis_cantones=eval("canton_" + provincia);
         num_cantones = mis_cantones.length;
-        document.contacto-formulario.canton.length = num_cantones;
+        document.formC.canton.length = num_cantones;
         for(i=0;i<num_cantones;i++){ 
-            document.contacto-formulario.canton.options[i].value=mis_cantones[i];
-            document.contacto-formulario.canton.options[i].text=mis_cantones[i];
+            document.formC.canton.options[i].value=mis_cantones[i];
+            document.formC.canton.options[i].text=mis_cantones[i];
         }
     }
-        document.contacto-formulario.canton.options[0].selected = true;
+        document.formC.canton.options[0].selected = true;
     
     }
 </script>
+
 
 
 </body>
