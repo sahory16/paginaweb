@@ -105,7 +105,7 @@ function EnviarFormulario(){
 	}else{
         $.ajax({
             type:'POST',
-            url:'EnviarForm.php',
+            url:'modalpop-envia.php',
             data:'ContactoEnviar=1&name='+name+'&email='+email+'&message='+message,
             beforeSend: function () {
                 $('.submitBtn').attr("disabled","disabled");
