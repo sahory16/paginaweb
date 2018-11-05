@@ -259,62 +259,34 @@
                             <label for="cantones">Canton *</label>
                             <select name=canton required>
                                 <option value="-">-
-                                    </select>
-
-
-               <!--             <label for="phone">Canton *</label>
-                            <select id="contact-canton_id" class="form-control" name="Contact[canton_id]" onchange="
-                                //jsShowWindowLoad(&quot;Seleccionando....&lt;br&gt;&quot;);
-                                $.post( &quot;/site/canton?id=&quot;+$(this).val(), function( data ) {
-                                  $( &quot;select#contact-canton_id&quot; ).html( data );
-                                  //jsRemoveWindowLoad();
-                                });" required>
-                              <option value="">Seleccione canton</option>
-                              <option value="1">Atacames</option>
-                              <option value="2">Muisne</option>
-                              <option value="3">Esmeraldas</option>
-                              <option value="4">Quininde</option>
-                              <option value="5">La concordia</option>
-                              <option value="6">Río Verde</option>
-                              <option value="7">Eloy Alfaro</option>
-                              <option value="8">San Lorenzo</option>
-                              
-                            </select>
-                           
-<br>
-
-                            <label for="phone">Parroquia *</label>
-                            <select id="contact-parroquia_id" class="form-control" name="Contact[parroquia_id]" onchange="
-                                //jsShowWindowLoad(&quot;Seleccionando....&lt;br&gt;&quot;);
-                                $.post( &quot;/site/parroquia?id=&quot;+$(this).val(), function( data ) {
-                                  $( &quot;select#contact-canton_id&quot; ).html( data );
-                                  //jsRemoveWindowLoad();
-                                });" required>
-                              <option value="">Seleccione una parroquia</option>
-                              <option value="1">5 de Agosto</option>
-                              <option value="2">Bartolome Ruis</option>
-                              <option value="3">Esmeraldas</option>
-                              <option value="4">Luis Tello</option>
-                              <option value="5">Simon Plata</option>
-                              <option value="6">Tabiazo</option>
-                              <option value="7">Tachina</option>
-                              <option value="8">Vuelta Larga</option>
-                              <option value="9">Camarones</option>
-                              <option value="10">Chinca</option>
-                              <option value="11">Carlos Concha</option>
-                              <option value="12">Majua</option>
-                              <option value="13">San Mateo</option>
-                              
-                            </select> -->
+                                    </select>               
 <br>
                             <label for="phone">Asunto *</label>
                             <input type="text" id="asuntoMen" name="asunto" required>
 
                             <label for="mensaje">Mensaje *</label>
+                            <div id="wysihtml5-toolbar" style="display: none;">
+                              <a data-wysihtml5-command="bold">bold</a>
+                              <a data-wysihtml5-command="italic">italic</a>
 
-                            <textarea id="wysihtml5-textarea" placeholder="Enter your text ..." autofocus=""></textarea>
+                              <!-- Some wysihtml5 commands require extra parameters -->
+                              <a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="red">red</a>
+                              <a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="green">green</a>
+                              <a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="blue">blue</a>
+
+                              <!-- Some wysihtml5 commands like 'createLink' require extra paramaters specified by the user (eg. href) -->
+                              <a data-wysihtml5-command="createLink">insert link</a>
+                              <div data-wysihtml5-dialog="createLink" style="display: none;">
+                                <label>
+                                  Link:
+                                  <input data-wysihtml5-dialog-field="href" value="http://" class="text">
+                                </label>
+                                <a data-wysihtml5-dialog-action="save">OK</a> <a data-wysihtml5-dialog-action="cancel">Cancel</a>
+                            </div>
+
+                            <textarea id="wysihtml5-textarea" placeholder="Ingresa tu mensaje ..." autofocus=""></textarea>
                             
-                            <textarea id="mensaje" name="mensaje" required></textarea>
+        
 
                             <input type="submit" value="Enviar Mensaje" id="btnSend">
                         </div>
