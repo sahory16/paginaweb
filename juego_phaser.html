@@ -27,6 +27,7 @@ function preload() {
 }
 
 var player;
+var villano
 var platforms;
 var cursors;
 
@@ -70,7 +71,7 @@ function create() {
 
     // The player and its settings
     player = game.add.sprite(32, game.world.height - 150, 'dude');
-    villano = game.add.sprite(50, game.world.height - 150, 'baddie');
+    villano = game.add.sprite(100, game.world.height - 150, 'baddie');
 
     //  We need to enable physics on the player
     game.physics.arcade.enable(player);
@@ -100,7 +101,7 @@ function create() {
     for (var i = 0; i < 25; i++)
     {
         //  Create a star inside of the 'stars' group
-        var star = stars.create(i * 70, 0, 'star');
+        var star = stars.create(i * 50, 0, 'star');
 
         //  Let gravity do its thing
         star.body.gravity.y = 300;
