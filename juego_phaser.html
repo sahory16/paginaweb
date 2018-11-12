@@ -70,10 +70,11 @@ function create() {
 
     // The player and its settings
     player = game.add.sprite(32, game.world.height - 150, 'dude');
-    villano = game.add.sprite(32, game.world.height - 250, 'baddie');
+    villano = game.add.sprite(50, game.world.height - 150, 'baddie');
 
     //  We need to enable physics on the player
     game.physics.arcade.enable(player);
+    game.physics.arcade.enable(villano);
 
     //  Player physics properties. Give the little guy a slight bounce.
     player.body.bounce.y = 0.2;
@@ -96,7 +97,7 @@ function create() {
     stars.enableBody = true;
 
     //  Here we'll create 12 of them evenly spaced apart
-    for (var i = 0; i < 12; i++)
+    for (var i = 0; i < 25; i++)
     {
         //  Create a star inside of the 'stars' group
         var star = stars.create(i * 70, 0, 'star');
@@ -105,7 +106,7 @@ function create() {
         star.body.gravity.y = 300;
 
         //  This just gives each star a slightly random bounce value
-        star.body.bounce.y = 0.7 + Math.random() * 0.2;
+        star.body.bounce.y = 0.4 + Math.random() * 0.2;
     }
 
     //  The score
@@ -164,7 +165,7 @@ function collectStar (player, star) {
     star.kill();
 
     //  Add and update the score
-    score += 10;
+    score += 5;
     scoreText.text = 'Score: ' + score;
 
 }
