@@ -22,7 +22,7 @@ function preload() {
     game.load.image('ground', 'assets/platform.png');
     game.load.image('star', 'assets/star.png');
     game.load.spritesheet('dude', 'assets/dude.png', 32, 48);
-    game.load.spritesheet('baddie', 'assets/baddie.png', 32, 48);
+    game.load.spritesheet('baddie', 'assets/baddie.png', 32, 32);
 
 }
 
@@ -79,6 +79,11 @@ function create() {
     player.body.bounce.y = 0.2;
     player.body.gravity.y = 300;
     player.body.collideWorldBounds = true;
+
+    /* villano
+    villano.body.bounce.y = 0.2;
+    villano.body.gravity.y = 300;
+    villano.body.collideWorldBounds = true; */
 
     //  Our two animations, walking left and right.
     player.animations.add('left', [0, 1, 2, 3], 10, true);
