@@ -204,62 +204,7 @@
                         </li>
                         </ul>
 
-                        <h3>WordPress</h3>
-                        <p>Es un sistema de gestión de contenidos (CMS) que permite crear y mantener un blog u otro tipo de web.
-                        Sobre todo es ideal  para los principiantes, o para los que no tienen demasiados conocimientos técnicos, 
-                        y resulta muy conveniente para un sitio web que se actualice periódicamente. Si se escribe contenido 
-                        con cierta frecuencia, cuando alguien accede al sitio web, puede encontrar todos esos contenidos ordenados cronológicamente (primero los más recientes y por último los más antiguos).
-
-                        WordPress dispone de un sistema de plugins, que permiten extender las capacidades de WordPress, de esa forma se consigue un CMS más flexible.
-
-                        </p>
-
-                        <h3>Instalando Docker</h3>
-
-                        <p>Configurando los repositorios</p>
-                        <ol>
-                          <li>Actualizar el apt índice del paquete:
-<pre name="codigo" align="left"> $ sudo apt-get update </pre> 
-  
-
-                          </li>
-                          <li>Instale paquetes para permitir aptusar un repositorio sobre HTTPS:
-<pre name="codigo" align="left"> $ sudo  apt-get install \
-                                apt-transport-https \
-                                ca-certificates \
-                                curl \
-                                software-properties-common </pre>
-                          </li>
-                          <li>Agregue la llave GPG oficial de Docker:
-<pre name="codigo" align="left"> $ curl -fsSL https://download.docke.com/linux/ubuntu/gpg | sudo apt-key add - </pre></li>
-
-                            
-                        </ol>
-
-                        <p>Instalando Docker Ce<p>
-                            <ol>
-                                <li>Actualizar el aptíndice del paquete.
-<pre name="codigo" align="left"> $ sudo apt-get update </pre> </li>
-                                <li>Instale la última versión de Docker CE:
-<pre name="codigo" align="left">$ sudo apt-get install docker-ce</pre></li>
-                                <li>Verifique que Docker CE esté instalado correctamente ejecutando la hello-world imagen.
-<pre name="codigo" align="left">$ sudo docker run hello-world</pre></li>
-                            </ol>
-
-                    <p>Como ya tenemos instalado docker, ahora procedemos a buscar la imagen de Wordpress 
-                        dentro del repositorio <a href='https://hub.docker.com/_/wordpress/'>Docker Hub</a>
-                    Y ejecutamos el siguiente comando: 
-<pre name="codigo" align="left">docker pull wordpress</pre>
-
-                    Como wordpress necesita una base de datos, creamos tambien la imagen de MYSQL con el comando:
-                    <pre name="codigo" align="left">docker pull mysql</pre>
-
-                    Ya que hemos creado ambas imágenes ahora crearemos los contenedores de cada una de ella con los comandos:
-<pre name="codigo" align="left">docker run --name mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql</pre>
-<pre name="codigo" align="left">docker run --name wordpress --link mysql:mysql -p 8080:80 -d wordpress</pre>
-
-                    Ahora solo tenemos que ingresar en el localhost y ya podremos visualizar el panel de WordPress.
-                </p>
+                        <a href="http://142.93.241.76:81/juego/t_hunter.html" target="_blank" class="btn btn-primary btn-lg active" role="button">Clic para Jugar</a>
                         
 
 
