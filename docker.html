@@ -165,6 +165,7 @@
 
                         <div class="tags-links">
                             <a href="#">#docker</a>
+                            <a href="#">#wordpress</a>
                             <a href="#">#definicion</a>
                             <a href="#">#instalacion</a>
                         </div><!-- .tags-links -->
@@ -195,7 +196,7 @@
                         <p>Configurando los repositorios</p>
                         <ol>
                           <li>Actualizar el apt índice del paquete:
-<pre name="codigo" align="left"> &quot;$ sudo apt-get update </pre> 
+<pre name="codigo" align="left"> $ sudo apt-get update </pre> 
   
 
                           </li>
@@ -208,7 +209,34 @@
                           </li>
                           <li>Agregue la llave GPG oficial de Docker:
 <pre name="codigo" align="left"> $ curl -fsSL https://download.docke.com/linux/ubuntu/gpg | sudo apt-key add - </pre></li>
+
+                            
                         </ol>
+
+                        <p>Instalando Docker Ce<p>
+                            <ol>
+                                <li>Actualizar el aptíndice del paquete.
+<pre name="codigo" align="left"> $ sudo apt-get update </pre> </li>
+                                <li>Instale la última versión de Docker CE:
+<pre name="codigo" align="left">$ sudo apt-get install docker-ce</pre></li>
+                                <li>Verifique que Docker CE esté instalado correctamente ejecutando la hello-world imagen.
+<pre name="codigo" align="left">$ sudo docker run hello-world</pre></li>
+                            </ol>
+
+                    <p>Como ya tenemos instalado docker, ahora procedemos a buscar la imagen de Wordpress 
+                        dentro del repositorio <a href='https://hub.docker.com/_/wordpress/'>Docker Hub</a>
+                    Y ejecutamos el siguiente comando: 
+<pre name="codigo" align="left">docker pull wordpress</pre>
+
+                    Como wordpress necesita una base de datos, creamos tambien la imagen de MYSQL con el comando:
+                    <pre name="codigo" align="left">docker pull mysql</pre>
+
+                    Ya que hemos creado ambas imágenes ahora crearemos los contenedores de cada una de ella con los comandos:
+<pre name="codigo" align="left">docker run --name mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql</pre>
+<pre name="codigo" align="left">docker run --name wordpress --link mysql:mysql -p 8080:80 -d wordpress</pre>
+
+                    Ahora solo tenemos que ingresar en el localhost y ya podremos visualizar el panel de WordPress.
+                </p>
                         
 
 
