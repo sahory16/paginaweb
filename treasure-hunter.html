@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejercicios en JavaScript</title>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PRS679N');</script>
+    <!-- End Google Tag Manager -->
+    <script language="javascript">   
+    window.onload = function() {
+      dp.SyntaxHighlighter.HighlightAll("codigo");
+    }
+    </script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name=”distribution” content="global"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRS679N"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+<script language="javascript">   
+    window.onload = function() {
+      dp.SyntaxHighlighter.HighlightAll("codigo");
+    }
+</script>   
+                        
+<div class="outer-container">
+    <header class="site-header">
+        <div class="top-header-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 flex align-items-center">
+                        <div class="header-bar-text d-none d-lg-block">
+                            <p>Hola, Mi nombre es Sahory</p>
+                        </div><!-- .header-bar-text -->
+
+                        <div class="header-bar-email d-none d-lg-block">
+                            <a href="#">sahory.maila@gmail.com</a>
+                                
+                        </div><!-- .header-bar-email -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-lg-6 flex justify-content-between justify-content-lg-end align-items-center">
+                        <div class="header-bar-social d-none d-md-block">
+                            <ul class="flex align-items-center">
+                                
+                                <<li><a href="https://www.facebook.com/sahory.maila"><i class="fa fa-facebook-square"></i></a></li>
+                                <li><a href="https://twitter.com/MailaSahory"><i class="fa fa-twitter-square"></i></a></li>
+                                <li><a href="https://www.instagram.com/sahory16/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://github.com/sahory16"><i class="fa fa-github-square"></i></a></li>
+                                
+                            </ul>
+                        </div><!-- .header-bar-social -->
+
+                        <div class="header-bar-search d-none d-md-block">
+                            <form>
+                                <input type="search" placeholder="Search">
+                            </form>
+                        </div><!-- .header-bar-search -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container-fluid -->
+        </div><!-- .top-header-bar -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="site-branding flex flex-column align-items-center">
+                        <h1 class="site-title"><a href="index.html" rel="home">Sahory Maila</a></h1><br><br>
+                        <p class="site-description">Blog Personal</p>
+                    </div><!-- .site-branding -->
+
+                    <nav class="site-navigation">
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+
+                        <ul class="flex-lg flex-lg-row justify-content-lg-center align-content-lg-center">
+                            <li class="current-menu-item"><a href="http://142.93.241.76:81/index.html">Inicio</a></li>
+                            
+                            <li><a href="http://142.93.241.76:81/blog.html">Blog</a></li>
+                            <li><a href="http://142.93.241.76:81/about.html">Acerca de</a></li>
+                            <li><a href="http://142.93.241.76:81/contact.html">Contacto</a></li>
+                        </ul>
+
+                        <div class="header-bar-social d-md-none">
+                            <ul class="flex justify-content-center align-items-center">
+                                
+                                <li><a href="https://www.facebook.com/sahory.maila"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/MailaSahory"><i class="fa fa-twitter-square"></i></a></li>
+                                <li><a href="https://www.instagram.com/sahory16/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://github.com/sahory16"><i class="fa fa-github-square"></i></a></li>
+                                
+                            </ul>
+                        </div><!-- .header-bar-social -->
+
+                        <div class="header-bar-search d-md-none">
+                            <form>
+                                <input type="search" placeholder="Search">
+                            </form>
+                        </div><!-- .header-bar-search -->
+                    </nav><!-- .site-navigation -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </header><!-- .site-header -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="page-header flex justify-content-center align-items-center" style="background-image: url('images/blog-posible.jpg')">
+                    <h1></h1>
+                </div><!-- .page-header -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-9 col-lg-3">
+                    <a href="#">
+                        <div class="yt-subscribe">
+                            <img src="images/foto-suscribete.png" alt="Youtube Subscribe">
+                            <!--<h3>Subscribe</h3>
+                            <p>To my Youtube Channel</p>-->
+                        </div><!-- .yt-subscribe -->
+                    </a>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .hero-section -->
+
+    <div class="container single-page blog-page">
+        <div class="row">
+            <div class="col-12">
+                <div class="content-wrap" >
+                    <header class="entry-header">
+                        <div class="posted-date">
+                            Noviembre 21, 2018
+                        </div><!-- .posted-date -->
+
+                        <h2 class="entry-title">Treasure Hunter</h2>
+
+                        <div class="tags-links">
+                            <a href="#">#juego</a>
+                            <a href="#">#2D</a>
+
+                            
+                        </div><!-- .tags-links -->
+                    </header><!-- .entry-header -->
+
+                    <figure class="featured-image">
+                        <img src="images/javascriptlogo.jpg" alt="">
+                    </figure><!-- .featured-image -->
+
+                    <div class="entry-content" ALIGN="justify">
+                        <h3>Docker</h3>
+                        <p> En este juego se propone lo siquiente: </p>
+                        <ul>
+                            <li>Habilitar todos los niveles:
+                                Para realizar esto, debemos ir al archivo <i>Game.js</i> encontraremos una matriz, llena de 0
+                                para habilitar todos los niveles solo tenemos que cambiarlos por 1
+<pre name="codigo" align="left"> levelStatusArray: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                                                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1] </pre>
+                            </li>
+                            <li>Crear el nivel 21:
+                                En el mismo archivo <i>Game.js</i> tenemos el tamaño de la matriz que originalmente tiene 20 niveles por 21, ademas de que hay que agregarle otro 1 a la matriz, quedaria algo asi:
+<pre name="codigo" align="left">game.global = {
+                                            levels: 21,
+                                            levelStatusArray: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                                                               1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                                                               1]
+                                            };</pre>
+
+                            Luego debemos abrir el archivo <i>LevelSelection.js</i> que esta el la carpeta <i>js</i>
+                            y cambiaremos el valor de las variables thumbRows y thumbCols, quearia asi:
+
+<pre name="codigo" align="left">var thumbRows = 1;
+                                var thumbCols = 7;</pre>
+                            Con esto estamos mostrando 7 niveles en cada pagina del Level Selection.
+                            Y para terminar tenemos que crear un archivo en <i>assets/levels</i> con el nombre <i>level21.json</i>
+                        </li>
+                        </ul>
+
+                        <h3>WordPress</h3>
+                        <p>Es un sistema de gestión de contenidos (CMS) que permite crear y mantener un blog u otro tipo de web.
+                        Sobre todo es ideal  para los principiantes, o para los que no tienen demasiados conocimientos técnicos, 
+                        y resulta muy conveniente para un sitio web que se actualice periódicamente. Si se escribe contenido 
+                        con cierta frecuencia, cuando alguien accede al sitio web, puede encontrar todos esos contenidos ordenados cronológicamente (primero los más recientes y por último los más antiguos).
+
+                        WordPress dispone de un sistema de plugins, que permiten extender las capacidades de WordPress, de esa forma se consigue un CMS más flexible.
+
+                        </p>
+
+                        <h3>Instalando Docker</h3>
+
+                        <p>Configurando los repositorios</p>
+                        <ol>
+                          <li>Actualizar el apt índice del paquete:
+<pre name="codigo" align="left"> $ sudo apt-get update </pre> 
+  
+
+                          </li>
+                          <li>Instale paquetes para permitir aptusar un repositorio sobre HTTPS:
+<pre name="codigo" align="left"> $ sudo  apt-get install \
+                                apt-transport-https \
+                                ca-certificates \
+                                curl \
+                                software-properties-common </pre>
+                          </li>
+                          <li>Agregue la llave GPG oficial de Docker:
+<pre name="codigo" align="left"> $ curl -fsSL https://download.docke.com/linux/ubuntu/gpg | sudo apt-key add - </pre></li>
+
+                            
+                        </ol>
+
+                        <p>Instalando Docker Ce<p>
+                            <ol>
+                                <li>Actualizar el aptíndice del paquete.
+<pre name="codigo" align="left"> $ sudo apt-get update </pre> </li>
+                                <li>Instale la última versión de Docker CE:
+<pre name="codigo" align="left">$ sudo apt-get install docker-ce</pre></li>
+                                <li>Verifique que Docker CE esté instalado correctamente ejecutando la hello-world imagen.
+<pre name="codigo" align="left">$ sudo docker run hello-world</pre></li>
+                            </ol>
+
+                    <p>Como ya tenemos instalado docker, ahora procedemos a buscar la imagen de Wordpress 
+                        dentro del repositorio <a href='https://hub.docker.com/_/wordpress/'>Docker Hub</a>
+                    Y ejecutamos el siguiente comando: 
+<pre name="codigo" align="left">docker pull wordpress</pre>
+
+                    Como wordpress necesita una base de datos, creamos tambien la imagen de MYSQL con el comando:
+                    <pre name="codigo" align="left">docker pull mysql</pre>
+
+                    Ya que hemos creado ambas imágenes ahora crearemos los contenedores de cada una de ella con los comandos:
+<pre name="codigo" align="left">docker run --name mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql</pre>
+<pre name="codigo" align="left">docker run --name wordpress --link mysql:mysql -p 8080:80 -d wordpress</pre>
+
+                    Ahora solo tenemos que ingresar en el localhost y ya podremos visualizar el panel de WordPress.
+                </p>
+                        
+
+
+                    </div><!-- .entry-content -->
+
+                    
+
+                <footer class="entry-footer flex flex-column flex-lg-row justify-content-between align-content-start align-lg-items-center">
+                        <ul class="post-share flex align-items-center order-3 order-lg-1">
+                            <label>Share</label>
+                            
+                            <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//142.93.241.76%3A81/blog.html"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a></li>
+                        </ul><!-- .post-share -->
+                </footer><!-- .entry-footer -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .outer-container -->
+
+<footer class="sit-footer">
+    <div class="outer-container">
+        <div class="container-fluid">
+            <div class="row footer-recent-posts">
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="footer-post-wrap flex justify-content-between">
+<!--                         <figure>
+                            <a href="#"><img src="images/foot-1.jpg" alt=""></a>
+                        </figure>
+
+<!--                        <div class="footer-post-cont flex flex-column justify-content-between">
+                            <header class="entry-header">
+                                <div class="posted-date">
+                                    January 30, 2018
+                                </div><!-- .entry-header -->
+
+ <!--                                <h3><a href="#">My fall in love story</a></h3>
+
+                                <div class="tags-links">
+                                    <a href="#">#winter</a>
+                                    <a href="#">#love</a>
+                                    <a href="#">#snow</a>
+                                    <a href="#">#january</a>
+                                </div><!-- .tags-links -->
+ <!--                            </header><!-- .entry-header -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                            <footer class="entry-footer">
+                                <a class="read-more" href="#">read more</a>
+                            </footer><!-- .entry-footer -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                        </div><!-- .footer-post-cont -->
+                    </div><!-- .footer-post-wrap -->
+                </div><!-- .col -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="footer-post-wrap flex justify-content-between">
+                        <figure>
+                            <a href="#"><img src="images/foot-2.jpg" alt=""></a>
+                        </figure>
+
+                        <div class="footer-post-cont flex flex-column justify-content-between">
+                            <header class="entry-header">
+                                <div class="posted-date">
+                                    January 30, 2018
+                                </div><!-- .entry-header -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                                <h3><a href="#">Man’s best friend</a></h3>
+
+                                <div class="tags-links">
+                                    <a href="#">#winter</a>
+                                    <a href="#">#love</a>
+                                    <a href="#">#snow</a>
+                                    <a href="#">#january</a>
+                                </div><!-- .tags-links -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                            </header><!-- .entry-header -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                            <footer class="entry-footer">
+                                <a class="read-more" href="#">read more</a>
+                            </footer><!-- .entry-footer -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                        </div><!-- .footer-post-cont -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                    </div><!-- .footer-post-wrap -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                </div><!-- .col -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="footer-post-wrap flex justify-content-between">
+                        <figure>
+                            <a href="#"><img src="images/foot-3.jpg" alt=""></a>
+                        </figure>
+
+                        <div class="footer-post-cont flex flex-column justify-content-between">
+                            <header class="entry-header">
+                                <div class="posted-date">
+                                    January 30, 2018
+                                </div><!-- .entry-header -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                                <h3><a href="#">Writing on a budget</a></h3>
+
+                                <div class="tags-links">
+                                    <a href="#">#winter</a>
+                                    <a href="#">#love</a>
+                                    <a href="#">#snow</a>
+                                    <a href="#">#january</a>
+                                </div><!-- .tags-links -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                            </header><!-- .entry-header -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                            <footer class="entry-footer">
+                                <a class="read-more" href="#">read more</a>
+                            </footer><!-- .entry-footer -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                        </div><!-- .footer-post-cont -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                    </div><!-- .footer-post-wrap -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                </div><!-- .col -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="footer-post-wrap flex justify-content-between">
+                        <figure>
+                            <a href="#"><img src="images/foot-4.jpg" alt=""></a>
+                        </figure>
+
+                        <div class="footer-post-cont flex flex-column justify-content-between">
+                            <header class="entry-header">
+                                <div class="posted-date">
+                                    January 30, 2018
+                                </div><!-- .entry-header -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                                <h3><a href="#">My fall in love story</a></h3>
+
+                                <div class="tags-links">
+                                    <a href="#">#winter</a>
+                                    <a href="#">#love</a>
+                                    <a href="#">#snow</a>
+                                    <a href="#">#january</a>
+                                </div><!-- .tags-links -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                            </header><!-- .entry-header -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                            <footer class="entry-footer">
+                                <a class="read-more" href="#">read more</a>
+                            </footer><!-- .entry-footer -->
+                        </div><!-- .footer-post-cont -->
+                    </div><!-- .footer-post-wrap -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container-fluid -->
+    </div><!-- .outer-container -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="footer-instagram flex flex-wrap flex-lg-nowrap">
+                <figure>
+                    <a href="https://www.instagram.com/p/BoDx-kShtse/?taken-by=sahory16"><img src="images/a.jpg" alt=""></a>
+                </figure>
+
+                <figure>
+                    <a href="https://www.instagram.com/p/BkWWu5ZAKf-/?taken-by=sahory16"><img src="images/b.jpg" alt=""></a>
+                </figure>
+
+                <figure>
+                    <a href="https://www.instagram.com/p/BkVd4MLAR6V/?taken-by=sahory16"><img src="images/c.jpg" alt=""></a>
+                </figure>
+
+                <figure>
+                        <a href="https://www.instagram.com/p/BjjUdceA75B/?taken-by=sahory16"><img src="images/d.jpg" alt=""></a>
+                </figure>
+
+                <figure>
+                    <a href="https://www.instagram.com/p/BjjNbU1Asw6/?taken-by=sahory16"><img src="images/e.jpg" alt=""></a>
+                </figure>
+
+                <figure>
+                    <a href="https://www.instagram.com/p/BjjKdBLgjAc/?taken-by=sahory16"><img src="images/f.jpg" alt=""></a>
+                </figure>
+
+                <figure>
+                    <a href="https://www.instagram.com/p/Bh2lOprnjDU/?taken-by=sahory16"><img src="images/g.jpg" alt=""></a>
+                </figure>
+            </div>
+        </div><!-- .row -->
+   </div><!-- .container -->
+
+    <div class="footer-bar">
+        <div class="outer-container">
+            <div class="container-fluid">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-6">
+                        <div class="footer-copyright">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> &amp; distributed by: <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </div><!-- .footer-copyright -->
+                    </div><!-- .col-xl-4 -->
+
+ <!--                   <div class="col-12 col-md-6">
+                        <div class="footer-social">
+                            <ul class="flex justify-content-center justify-content-md-end align-items-center">
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div><!-- .footer-social -->
+                    </div><!-- .col-xl-4 -->
+                </div><!-- .row -->
+            </div><!-- .container-fluid -->
+        </div><!-- .outer-container -->
+    </div><!-- .footer-bar -->
+</footer><!-- .sit-footer -->
+
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/swiper.min.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>">
+
+
+</body>
+</html>
