@@ -29,8 +29,8 @@
                  "type":"coin",
                  "visible":true,
                  "width":0,
-                 "x":272,
-                 "y":236
+                 "x":432,
+                 "y":270
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -72,8 +72,8 @@
                  "type":"treasureChest",
                  "visible":true,
                  "width":0,
-                 "x":56,
-                 "y":276
+                 "x":273,
+                 "y":256
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -156,7 +156,7 @@
                  "type":"firefly",
                  "visible":true,
                  "width":0,
-                 "x":432,
+                 "x":252,
                  "y":252
                 }],
          "opacity":1,

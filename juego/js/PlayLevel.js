@@ -47,7 +47,9 @@ TreasureHunter.PlayLevel.prototype = {
         this.jumpSound.volume = 0.7;
         this.loseSound = this.add.audio('lose');
         this.loseSound.volume = 1.3;
-        this.score=0;
+
+        this.score=0; // variable para el puntajes
+        
 
         /////////////////////////////////
         //  END VARIABLES DECLARATION  //
@@ -77,21 +79,6 @@ TreasureHunter.PlayLevel.prototype = {
         this.input.onDown.add(this.jump, this);
         this.input.onUp.add(this.initialDelay, this);
         this.player.body.velocity.x = this.playerVelocity;
-        /*do{
-            if (this.cursor.left.isDown) {
-        //Movemos nuestro personaje hacia la izquierda
-        //this.player.body.velocity.x = -350;
-            this.player.body.velocity.x = this.playerVelocity--;
-            if (this.cursor.left.isDown) {
-        
-            this.player.body.velocity.x = this.playerVelocity++;
-            
-            }
-        }
-            
-        }while();*/
-        
-        
         this.gameStarted = true;
     },
 
@@ -162,11 +149,6 @@ TreasureHunter.PlayLevel.prototype = {
         /////////////////////////////////
 
         this.shakeEffect();
-        
-        
-        //////caracteristica de mortalidad////
-        
-        
     },
 
     startShake: function (frames, magnitude) {
@@ -249,10 +231,9 @@ TreasureHunter.PlayLevel.prototype = {
         hitTween.onComplete.add(function() {
             coin.destroy();
             this.coinsLeft--;
-            this.score++;
+            this.score++; // cada que el personaje toque una moneda en score aunmentara 
             if (this.coinsLeft === 0) {
                 this.createTreasureChest();
-                //this.score++;
             }
         }, this);
     },
@@ -361,13 +342,12 @@ TreasureHunter.PlayLevel.prototype = {
 
         // Create coins
         this.createCoins();
-        
-        
+
         // Add level numbering
         var levelText = this.add.bitmapText(28, 28, 'eightbitwonder', 'LEVEL ' + this.level, 12);
-        
+        // agregando el texto para que se muestre el score
         var scoretext= this.add.bitmapText(150, 28, 'eightbitwonder', 'SCORE ' + this.score, 12);
-        
+
         // Add appropriate tutorial text to each level
         if(this.level === 1) {
             var clickTap = this.game.device.desktop ? 'CLICK OR SPACEBAR' : 'TAP';
@@ -598,8 +578,6 @@ TreasureHunter.PlayLevel.prototype = {
             spriteObj[key] = element.properties[key];
         });
     },
-    
-    
 
     shutdown: function() {
         // Clean up variables

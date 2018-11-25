@@ -6,10 +6,10 @@ var game = new Phaser.Game(544, 320, Phaser.CANVAS, 'game_div', null, false, fal
 
 // Define our 'global' variable
 game.global = {
-    levels: 21,
-    levelStatusArray: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+    levels: 21, // numero de niveles es el tamaño de la matriz
+    levelStatusArray: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
                        1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-                       1]
+                       1] //se le pone 1, para que todos los niveles esten desbloqueados
 };
 
 // Add all the states
