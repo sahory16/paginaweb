@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejercicios en JavaScript</title>
+
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PRS679N');</script>
+    <!-- End Google Tag Manager -->
+    <script language="javascript">   
+    window.onload = function() {
+      dp.SyntaxHighlighter.HighlightAll("codigo");
+    }
+    </script>
+    <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+        <script src="js/pixi.dev.js"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name=”distribution” content="global"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRS679N"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+<script language="javascript">   
+    window.onload = function() {
+      dp.SyntaxHighlighter.HighlightAll("codigo");
+    }
+</script>   
+                        
+<div class="outer-container">
+    <header class="site-header">
+        <div class="top-header-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 flex align-items-center">
+                        <div class="header-bar-text d-none d-lg-block">
+                            <p>Hola, Mi nombre es Sahory</p>
+                        </div><!-- .header-bar-text -->
+
+                        <div class="header-bar-email d-none d-lg-block">
+                            <a href="#">sahory.maila@gmail.com</a>
+                                
+                        </div><!-- .header-bar-email -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-lg-6 flex justify-content-between justify-content-lg-end align-items-center">
+                        <div class="header-bar-social d-none d-md-block">
+                            <ul class="flex align-items-center">
+                                
+                                <<li><a href="https://www.facebook.com/sahory.maila"><i class="fa fa-facebook-square"></i></a></li>
+                                <li><a href="https://twitter.com/MailaSahory"><i class="fa fa-twitter-square"></i></a></li>
+                                <li><a href="https://www.instagram.com/sahory16/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://github.com/sahory16"><i class="fa fa-github-square"></i></a></li>
+                                
+                            </ul>
+                        </div><!-- .header-bar-social -->
+
+                        <div class="header-bar-search d-none d-md-block">
+                            <form>
+                                <input type="search" placeholder="Search">
+                            </form>
+                        </div><!-- .header-bar-search -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container-fluid -->
+        </div><!-- .top-header-bar -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="site-branding flex flex-column align-items-center">
+                        <h1 class="site-title"><a href="index.html" rel="home">Sahory Maila</a></h1><br><br>
+                        <p class="site-description">Blog Personal</p>
+                    </div><!-- .site-branding -->
+
+                    <nav class="site-navigation">
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+
+                        <ul class="flex-lg flex-lg-row justify-content-lg-center align-content-lg-center">
+                            <li class="current-menu-item"><a href="http://142.93.241.76:81/index.html">Inicio</a></li>
+                            
+                            <li><a href="http://142.93.241.76:81/blog.html">Blog</a></li>
+                            <li><a href="http://142.93.241.76:81/about.html">Acerca de</a></li>
+                            <li><a href="http://142.93.241.76:81/contact.html">Contacto</a></li>
+                        </ul>
+
+                        <div class="header-bar-social d-md-none">
+                            <ul class="flex justify-content-center align-items-center">
+                                
+                                <li><a href="https://www.facebook.com/sahory.maila"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/MailaSahory"><i class="fa fa-twitter-square"></i></a></li>
+                                <li><a href="https://www.instagram.com/sahory16/"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://github.com/sahory16"><i class="fa fa-github-square"></i></a></li>
+                                
+                            </ul>
+                        </div><!-- .header-bar-social -->
+
+                        <div class="header-bar-search d-md-none">
+                            <form>
+                                <input type="search" placeholder="Search">
+                            </form>
+                        </div><!-- .header-bar-search -->
+                    </nav><!-- .site-navigation -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </header><!-- .site-header -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="page-header flex justify-content-center align-items-center" style="background-image: url('images/blog-posible.jpg')">
+                    <h1></h1>
+                </div><!-- .page-header -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-9 col-lg-3">
+                    <a href="#">
+                        <div class="yt-subscribe">
+                            <img src="images/foto-suscribete.png" alt="Youtube Subscribe">
+                            <!--<h3>Subscribe</h3>
+                            <p>To my Youtube Channel</p>-->
+                        </div><!-- .yt-subscribe -->
+                    </a>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .hero-section -->
+
+    <div class="container single-page blog-page">
+        <div class="row">
+            <div class="col-12">
+                <div class="content-wrap" >
+                    <header class="entry-header">
+                        <div class="posted-date">
+                            Noviembre 10, 2018
+                        </div><!-- .posted-date -->
+
+                        <h2 class="entry-title">Crafty Js</h2>
+
+                        <div class="tags-links">
+                            <a href="#">#craftyjs</a>
+                            <a href="#">#2D</a>
+                            <a href="#">#definicion</a>
+                            <a href="#">#caracteristicas</a>
+                        </div><!-- .tags-links -->
+                    </header><!-- .entry-header -->
+
+                    <figure class="featured-image">
+                        <img src="images/pixi-logo.png" alt="">
+                    </figure><!-- .featured-image -->
+
+                    <div class="entry-content" ALIGN="justify">
+                        <h3>Pixi</h3>
+                        <p>Es un motor de renderizado 2d muy potente, lo que significa que te ayuda a mostrar y animar gráficos interactivos, lo que facilita la creación de juegos en javascript y HTML5 sin tener que acceder directamente a la API de WebGL.También hace uso del elemento HTML5 canvas para la creación de gráficos interactivos.</p>
+
+                        <h4>Caracteristicas</h4>
+                        <p>Actualmente este framework posee las siguientes características:</p>
+
+                        
+                        <ul>
+                          <li>Renderizado WebGL.</li>
+                          <li>Rederizado de canvas</li>
+                          <li>Gráficos a pantalla completa</li>
+                          <li>Soporte para textura atlas</li>
+                          <li>Autodetecta que renderizador debe usar</li>
+                          <li>Permite la interacción total con el ratón y multi-touch</li>   
+                        </ul>
+
+                        <p>Juego realizado con Pixi Js</p>
+
+                        <script>
+            // first tile picked up by the player
+            var firstTile=null;
+            // second tile picked up by the player
+            var secondTile=null;
+            // can the player pick up a tile?
+            var canPick=true;
+            // create an new instance of a pixi stage with a grey background
+            var stage = new PIXI.Stage(0x888888);
+            // create a renderer instance width=640 height=480
+            var renderer = PIXI.autoDetectRenderer(640,480);
+            // importing a texture atlas created with texturepacker
+            var tileAtlas = ["images/images.json"];
+            // create a new loader
+            var loader = new PIXI.AssetLoader(tileAtlas);
+            // create an empty container
+            var gameContainer = new PIXI.DisplayObjectContainer();
+            // add the container to the stage
+            stage.addChild(gameContainer);
+            // add the renderer view element to the DOM
+            document.body.appendChild(renderer.view);
+            // use callback
+            loader.onComplete = onTilesLoaded
+            //begin load
+            loader.load();  
+            function onTilesLoaded(){
+                // choose 24 random tile images
+                var chosenTiles=new Array();
+                while(chosenTiles.length<48){
+                    var candidate=Math.floor(Math.random()*44);
+                    if(chosenTiles.indexOf(candidate)==-1){
+                        chosenTiles.push(candidate,candidate)
+                    }           
+                }
+                // shuffle the chosen tiles
+                for(i=0;i<96;i++){
+                    var from = Math.floor(Math.random()*48);
+                    var to = Math.floor(Math.random()*48);
+                    var tmp = chosenTiles[from];
+                    chosenTiles[from]=chosenTiles[to];
+                    chosenTiles[to]=tmp;
+                }
+                // place down tiles
+                for(i=0;i<8;i++){
+                    for(j=0;j<6;j++){
+                        // new sprite
+                        var tile = PIXI.Sprite.fromFrame(chosenTiles[i*6+j]);
+                        // buttonmode+interactive = acts like a button
+                        tile.buttonMode=true;
+                        tile.interactive = true;
+                        // is the tile selected?
+                        tile.isSelected=false;
+                        // set a tile value
+                        tile.theVal=chosenTiles[i*6+j]
+                        // place the tile
+                        tile.position.x = 7+i*80;
+                        tile.position.y = 7+  j*80;
+                        // paint tile black
+                        tile.tint = 0x000000;
+                        // set it a bit transparent (it will look grey)
+                        tile.alpha=0.5;
+                        // add the tile
+                        gameContainer.addChild(tile);
+                        // mouse-touch listener
+                        tile.mousedown = tile.touchstart = function(data){
+                            // can I pick a tile?
+                            if(canPick) {
+                                 // is the tile already selected?
+                                if(!this.isSelected){
+                                    // set the tile to selected
+                                    this.isSelected = true;
+                                    // show the tile
+                                    this.tint = 0xffffff;
+                                    this.alpha = 1;
+                                    // is it the first tile we uncover?
+                                    if(firstTile==null){
+                                        firstTile=this
+                                    }
+                                    // this is the second tile
+                                    else{
+                                        secondTile=this
+                                        // can't pick anymore
+                                        canPick=false;
+                                        // did we pick the same tiles?
+                                        if(firstTile.theVal==secondTile.theVal){
+                                            // wait a second then remove the tiles and make the player able to pick again
+                                            setTimeout(function(){
+                                                gameContainer.removeChild(firstTile);
+                                                gameContainer.removeChild(secondTile);
+                                                firstTile=null;
+                                                secondTile=null;
+                                                canPick=true;
+                                            },1000);
+                                        }
+                                        // we picked different tiles
+                                        else{
+                                            // wait a second then cover the tiles and make the player able to pick again
+                                            setTimeout(function(){
+                                                firstTile.isSelected=false
+                                                secondTile.isSelected=false
+                                                firstTile.tint = 0x000000;
+                                                secondTile.tint = 0x000000;
+                                                firstTile.alpha=0.5;
+                                                secondTile.alpha=0.5;
+                                                firstTile=null;
+                                                secondTile=null;
+                                                canPick=true    
+                                            },1000);
+                                        }
+                                    }   
+                                }
+                            }
+                        }
+                    }
+                } 
+                requestAnimFrame(animate);
+            }
+            function animate() {
+                requestAnimFrame(animate);
+                renderer.render(stage);
+            }
+        </script>
+
+                        <p>Para mayor informacion sobre el juego la podemos enocontrar en el siquiente enlace:
+                            <a href="https://www.emanueleferonato.com/2014/02/26/complete-html5-concentration-game-made-with-pixi-js/"></a>Dale Click </p>
+
+
+                    </div><!-- .entry-content -->
+
+                    
+
+                <footer class="entry-footer flex flex-column flex-lg-row justify-content-between align-content-start align-lg-items-center">
+                        <ul class="post-share flex align-items-center order-3 order-lg-1">
+                            <label>Share</label>
+                            
+                            <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//142.93.241.76%3A81/blog.html"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a></li>
+                        </ul><!-- .post-share -->
+                </footer><!-- .entry-footer -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .outer-container -->
+
+<footer class="sit-footer">
+    <div class="outer-container">
+        <div class="container-fluid">
+            <div class="row footer-recent-posts">
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="footer-post-wrap flex justify-content-between">
+<!--                         <figure>
+                            <a href="#"><img src="images/foot-1.jpg" alt=""></a>
+                        </figure>
+
+<!--                        <div class="footer-post-cont flex flex-column justify-content-between">
+                            <header class="entry-header">
+                                <div class="posted-date">
+                                    January 30, 2018
+                                </div><!-- .entry-header -->
+
+ <!--                                <h3><a href="#">My fall in love story</a></h3>
+
+                                <div class="tags-links">
+                                    <a href="#">#winter</a>
+                                    <a href="#">#love</a>
+                                    <a href="#">#snow</a>
+                                    <a href="#">#january</a>
+                                </div><!-- .tags-links -->
+ <!--                            </header><!-- .entry-header -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                            <footer class="entry-footer">
+                                <a class="read-more" href="#">read more</a>
+                            </footer><!-- .entry-footer -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                        </div><!-- .footer-post-cont -->
+                    </div><!-- .footer-post-wrap -->
+                </div><!-- .col -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="footer-post-wrap flex justify-content-between">
+                        <figure>
+                            <a href="#"><img src="images/foot-2.jpg" alt=""></a>
+                        </figure>
+
+                        <div class="footer-post-cont flex flex-column justify-content-between">
+                            <header class="entry-header">
+                                <div class="posted-date">
+                                    January 30, 2018
+                                </div><!-- .entry-header -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                                <h3><a href="#">Man’s best friend</a></h3>
+
+                                <div class="tags-links">
+                                    <a href="#">#winter</a>
+                                    <a href="#">#love</a>
+                                    <a href="#">#snow</a>
+                                    <a href="#">#january</a>
+                                </div><!-- .tags-links -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                            </header><!-- .entry-header -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                            <footer class="entry-footer">
+                                <a class="read-more" href="#">read more</a>
+                            </footer><!-- .entry-footer -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                        </div><!-- .footer-post-cont -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                    </div><!-- .footer-post-wrap -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                </div><!-- .col -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="footer-post-wrap flex justify-content-between">
+                        <figure>
+                            <a href="#"><img src="images/foot-3.jpg" alt=""></a>
+                        </figure>
+
+                        <div class="footer-post-cont flex flex-column justify-content-between">
+                            <header class="entry-header">
+                                <div class="posted-date">
+                                    January 30, 2018
+                                </div><!-- .entry-header -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                                <h3><a href="#">Writing on a budget</a></h3>
+
+                                <div class="tags-links">
+                                    <a href="#">#winter</a>
+                                    <a href="#">#love</a>
+                                    <a href="#">#snow</a>
+                                    <a href="#">#january</a>
+                                </div><!-- .tags-links -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                            </header><!-- .entry-header -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                            <footer class="entry-footer">
+                                <a class="read-more" href="#">read more</a>
+                            </footer><!-- .entry-footer -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                        </div><!-- .footer-post-cont -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                    </div><!-- .footer-post-wrap -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                </div><!-- .col -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="footer-post-wrap flex justify-content-between">
+                        <figure>
+                            <a href="#"><img src="images/foot-4.jpg" alt=""></a>
+                        </figure>
+
+                        <div class="footer-post-cont flex flex-column justify-content-between">
+                            <header class="entry-header">
+                                <div class="posted-date">
+                                    January 30, 2018
+                                </div><!-- .entry-header -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                                <h3><a href="#">My fall in love story</a></h3>
+
+                                <div class="tags-links">
+                                    <a href="#">#winter</a>
+                                    <a href="#">#love</a>
+                                    <a href="#">#snow</a>
+                                    <a href="#">#january</a>
+                                </div><!-- .tags-links -->
+ <!--                                <a class="read-more" href="#">read more</a>
+                            </header><!-- .entry-header -->
+
+ <!--                                <a class="read-more" href="#">read more</a>
+                            <footer class="entry-footer">
+                                <a class="read-more" href="#">read more</a>
+                            </footer><!-- .entry-footer -->
+                        </div><!-- .footer-post-cont -->
+                    </div><!-- .footer-post-wrap -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container-fluid -->
+    </div><!-- .outer-container -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="footer-instagram flex flex-wrap flex-lg-nowrap">
+                <figure>
+                    <a href="https://www.instagram.com/p/BoDx-kShtse/?taken-by=sahory16"><img src="images/a.jpg" alt=""></a>
+                </figure>
+
+                <figure>
+                    <a href="https://www.instagram.com/p/BkWWu5ZAKf-/?taken-by=sahory16"><img src="images/b.jpg" alt=""></a>
+                </figure>
+
+                <figure>
+                    <a href="https://www.instagram.com/p/BkVd4MLAR6V/?taken-by=sahory16"><img src="images/c.jpg" alt=""></a>
+                </figure>
+
+                <figure>
+                        <a href="https://www.instagram.com/p/BjjUdceA75B/?taken-by=sahory16"><img src="images/d.jpg" alt=""></a>
+                </figure>
+
+                <figure>
+                    <a href="https://www.instagram.com/p/BjjNbU1Asw6/?taken-by=sahory16"><img src="images/e.jpg" alt=""></a>
+                </figure>
+
+                <figure>
+                    <a href="https://www.instagram.com/p/BjjKdBLgjAc/?taken-by=sahory16"><img src="images/f.jpg" alt=""></a>
+                </figure>
+
+                <figure>
+                    <a href="https://www.instagram.com/p/Bh2lOprnjDU/?taken-by=sahory16"><img src="images/g.jpg" alt=""></a>
+                </figure>
+            </div>
+        </div><!-- .row -->
+   </div><!-- .container -->
+
+    <div class="footer-bar">
+        <div class="outer-container">
+            <div class="container-fluid">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-6">
+                        <div class="footer-copyright">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> &amp; distributed by: <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </div><!-- .footer-copyright -->
+                    </div><!-- .col-xl-4 -->
+
+ <!--                   <div class="col-12 col-md-6">
+                        <div class="footer-social">
+                            <ul class="flex justify-content-center justify-content-md-end align-items-center">
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div><!-- .footer-social -->
+                    </div><!-- .col-xl-4 -->
+                </div><!-- .row -->
+            </div><!-- .container-fluid -->
+        </div><!-- .outer-container -->
+    </div><!-- .footer-bar -->
+</footer><!-- .sit-footer -->
+
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/swiper.min.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>">
+
+
+</body>
+</html>
