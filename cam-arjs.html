@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html>
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <!-- three.js library -->
-<script src='/ejemplo/js/three.js'></script>
+<script src='js/three.js'></script>
 <!-- three.js collada model loader -->
 <script src="/ejemplo/js/ColladaLoader.js"></script>
 <!-- jsartookit -->
-<script src="/ejemplo/vendor/jsartoolkit5/build/artoolkit.min.js"></script>
-<script src="/ejemplo/vendor/jsartoolkit5/js/artoolkit.api.js"></script>
+<script src="vendor/jsartoolkit5/build/artoolkit.min.js"></script>
+<script src="vendor/jsartoolkit5/js/artoolkit.api.js"></script>
 <!-- include threex.artoolkit -->
-<script src="/ejemplo/threex-artoolkitsource.js"></script>
-<script src="/ejemplo/threex-artoolkitcontext.js"></script>
-<script src="/ejemplo/threex-armarkercontrols.js"></script>
+<script src="threex-artoolkitsource.js"></script>
+<script src="threex-artoolkitcontext.js"></script>
+<script src="threex-armarkercontrols.js"></script>
 <script>
     THREEx.ArToolkitContext.baseURL = '/'
 
@@ -41,7 +40,7 @@
         var arToolkitContext, onRenderFcts, arToolkitSource, markerRoot, artoolkitMarker, lastTimeMsec;
         var model, tube1, tube2, mid, details, pulse;
         var loader = new THREE.ColladaLoader();
-        loader.load('ejemplo/model/scene.dae', function(collada) {
+        loader.load('model/scene.dae', function(collada) {
 
             model = collada.scene;
             model.scale.x = model.scale.y = model.scale.z = 0.1;
@@ -116,7 +115,7 @@
             //////// Initialize ArToolkitContext /////////
             // create atToolkitContext
             arToolkitContext = new THREEx.ArToolkitContext({
-                cameraParametersUrl: 'ejemplo/data/camera_para.dat',
+                cameraParametersUrl: 'data/camera_para.dat',
                 detectionMode: 'mono',
                 maxDetectionRate: 30,
                 canvasWidth: 80 * 3,
@@ -137,7 +136,7 @@
             scene.add(markerRoot)
             artoolkitMarker = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
                 type: 'pattern',
-                patternUrl: 'ejemplo/data/patt.hiro'
+                patternUrl: 'data/patt.hiro'
             });
 
             //////// Add object to scene via the marker /////////
@@ -181,4 +180,3 @@
 
     </script>
 </body>
-</html>
